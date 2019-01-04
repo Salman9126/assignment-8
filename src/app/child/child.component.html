@@ -1,0 +1,12 @@
+<div class="form-group">
+    <label for="text">Enter Text:</label>
+    <input type="text" #str class="form-control" id="text">
+</div>
+<button (click)="fun(str.value)" class="btn btn-primary">Submit</button>
+<br>
+<hr>
+<h3>Example 1</h3>
+<br>
+<div>This data come from Parent component : {{inData}}</div>
+
+<button (click)="send()" class="btn btn-primary">Send to Parent</button>
